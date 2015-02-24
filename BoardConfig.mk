@@ -192,9 +192,6 @@ BOARD_SEPOLICY_UNION += \
     ueventd.te \
     vibe_dev.te \
     vold.te
-	
-# Liquid Optimizations
-HACKIFY := true	
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
