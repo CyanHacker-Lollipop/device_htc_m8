@@ -21,6 +21,10 @@
 # lines, full and maguro, hence its name.
 #
 
+TARGET_SM_AND := 4.8-sm
+TARGET_SM_KERNEL := 4.8-sm
+ENABLE_PTHREAD := false
+ 
 # Inherit m8-specific vendor tree
 $(call inherit-product-if-exists, vendor/htc/m8/m8-vendor.mk)
 
