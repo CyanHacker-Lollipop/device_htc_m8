@@ -63,6 +63,13 @@ BOARD_CUSTOM_BOOTIMG_MK := device/htc/m8/mkbootimg.mk
 TARGET_KERNEL_CONFIG := cm_m8_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8974
 
+# Disable some modules for Graphite and O3
+LOCAL_DISABLE_GRAPHITE := \
+	fio
+	
+LOCAL_DISABLE_O3 := \
+	libopus
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
