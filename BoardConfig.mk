@@ -28,6 +28,13 @@
 # 0P6B20000 - Verizon
 # 0P6B70000 - Sprint
 
+
+# Disable some modules for Graphite and O3
+#LOCAL_DISABLE_GRAPHITE := \
+	
+LOCAL_DISABLE_O3 := \
+	libopus
+
 TARGET_OTA_ASSERT_DEVICE := htc_m8,htc_m8whl,htc_m8wl,m8,m8wl,m8wlv,m8vzw,m8whl,m8spr
 TARGET_BOARD_INFO_FILE ?= device/htc/m8/board-info.txt
 
@@ -199,3 +206,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8/releasetools
 
 # Hardware
 BOARD_HARDWARE_CLASS := device/htc/m8/cmhw
+
+ifdef TARGET_GCC_ARM
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-$(TARGET_GCC_ARM)/bin
+endif

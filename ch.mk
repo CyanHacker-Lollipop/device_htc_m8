@@ -1,9 +1,10 @@
 # Sabermod configs
-O3_OPTIMIZATIONS := true
-TARGET_SM_AND := 4.8
-TARGET_SM_KERNEL := 4.9
+TARGET_GCC_AND := 4.8-sm
+TARGET_GCC_ARM := 4.9-sm
 TARGET_LIB_VERSION := 4.8
 ENABLE_PTHREAD := true
+O3_OPTIMIZATIONS:= true
+USE_LEGACY_GCC := false
 
 $(call inherit-product, device/htc/m8/full_m8.mk)
 
