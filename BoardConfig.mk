@@ -36,7 +36,7 @@ LOCAL_DISBLE_O3 := \
 TARGET_OTA_ASSERT_DEVICE := htc_m8,htc_m8whl,htc_m8wl,m8,m8wl,m8wlv,m8vzw,m8whl,m8spr
 TARGET_BOARD_INFO_FILE ?= device/htc/m8/board-info.txt
 
-BOARD_VENDOR := htc
+BOARD_VENDOR := htc 
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
