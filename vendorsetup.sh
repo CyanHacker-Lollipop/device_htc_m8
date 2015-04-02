@@ -1,0 +1,2 @@
+add_lunch_combo ch_m8-user
+add_lunch_combo ch_m8-userdebug
