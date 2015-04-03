@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_27cbb7a6",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-04-03T17:19:11Z",
+      "side": 1,
+      "message": "dunno if it gets initialised correctly",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 8
+      },
+      "revId": "6230d1125d40f0f7aa05ae33d7f32c77823a04e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_d13c2196",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-04-03T17:19:11Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 213,
+        "startChar": 0,
+        "endLine": 213,
+        "endChar": 30
+      },
+      "revId": "6230d1125d40f0f7aa05ae33d7f32c77823a04e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_c7d58344",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-04-03T17:19:11Z",
+      "side": 1,
+      "message": "this doesnt fit here",
+      "range": {
+        "startLine": 213,
+        "startChar": 0,
+        "endLine": 213,
+        "endChar": 30
+      },
+      "revId": "6230d1125d40f0f7aa05ae33d7f32c77823a04e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_07d03b4f",
+        "filename": "ch.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-04-03T17:19:11Z",
+      "side": 1,
+      "message": "false",
+      "range": {
+        "startLine": 19,
+        "startChar": 19,
+        "endLine": 19,
+        "endChar": 23
+      },
+      "revId": "6230d1125d40f0f7aa05ae33d7f32c77823a04e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
