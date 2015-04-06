@@ -19,7 +19,11 @@ ENABLE_PTHREAD := true
 O3_OPTIMIZATIONS:= false
 
 ##Enable ArchiDroid Optimizations
-ARCHIDROID_OPTIMIZATIONS := true
+ARCHIDROID_OPTIMIZATIONS := false
+
+#Use Kernel Optimizations?
+USE_KERNEL_OPTIMIZATIONS := true
+
 endif
 #################################################
 
