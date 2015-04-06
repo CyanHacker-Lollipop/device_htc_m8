@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_9180e447",
+        "filename": "ch.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1003174
+      },
+      "writtenOn": "2015-04-06T00:21:47Z",
+      "side": 1,
+      "message": "we could set that to true",
+      "range": {
+        "startLine": 22,
+        "startChar": 28,
+        "endLine": 22,
+        "endChar": 33
+      },
+      "revId": "89ba5b53a2f1bd6242c39cf6b5b8596b3b5f22a3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
