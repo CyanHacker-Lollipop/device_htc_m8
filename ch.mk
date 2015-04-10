@@ -8,6 +8,9 @@ ifneq ($(strip $(USE_OPTIMIZATIONS)),false)
 ##Define ROM toolchain
 TARGET_GCC_AND := 4.8-sm
 
+##Define NDK toolchain
+TARGET_NDK_VERSION := 4.9
+
 ##Define Kernel toolchain
 TARGET_GCC_ARM := 4.9-sm
 
@@ -15,10 +18,7 @@ TARGET_GCC_ARM := 4.9-sm
 ENABLE_PTHREAD := true
 
 ##Enable O3 Optimizations
-O3_OPTIMIZATIONS:= false
-
-##Enable ArchiDroid Optimizations
-ARCHIDROID_OPTIMIZATIONS := true
+O3_OPTIMIZATIONS:= true
 
 #Use Kernel Optimizations?
 USE_KERNEL_OPTIMIZATIONS := true
