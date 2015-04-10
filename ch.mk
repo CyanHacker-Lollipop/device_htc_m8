@@ -5,9 +5,8 @@ USE_OPTIMIZATIONS := true
 ifneq ($(strip $(USE_OPTIMIZATIONS)),false)
 #HACKIFY CONFIGURATION 
 
-##Define ROM toolchain and LIB Verison(should be the same version number as the toolchain)
+##Define ROM toolchain
 TARGET_GCC_AND := 4.8-sm
-TARGET_LIB_VERSION := 4.8
 
 ##Define Kernel toolchain
 TARGET_GCC_ARM := 4.9-sm
