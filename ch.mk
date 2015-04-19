@@ -29,7 +29,7 @@ USE_EXTRA_OPTIMIZATIONS := true
 ##How many threads does the device have?
 PRODUCT_THREADS := 4
 
-ifeq ($(strip $(USE_EXTRA_OPTIMZATIONS)),true)
+ifeq ($(strip $(USE_EXTRA_OPTIMIZATIONS)),true)
 # Extra SaberMod GCC C flags for the ROM and Kernel
 export EXTRA_SABERMOD_GCC_CFLAGS := \
          -ftree-loop-distribution \
@@ -47,7 +47,7 @@ EXTRA_SABERMOD_CLANG_CFLAGS := \
   -ftree-vectorize \
   -pipe
 
-OPT4 := extra
+OPT4 := -extra
 
 GRAPHITE_KERNEL_FLAGS := \
   -floop-parallelize-all \
