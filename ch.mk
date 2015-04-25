@@ -20,8 +20,41 @@ ENABLE_PTHREAD := true
 ##Enable O3 Optimizations
 O3_OPTIMIZATIONS:= true
 
-#Use Kernel Optimizations?
+##Use Kernel Optimizations?
 USE_KERNEL_OPTIMIZATIONS := true
+
+##Use Extra Optimizations?
+USE_EXTRA_OPTIMIZATIONS := true
+
+##How many threads does the device have?
+PRODUCT_THREADS := 4
+
+ifeq ($(strip $(USE_EXTRA_OPTIMZATIONS)),true)
+# Extra SaberMod GCC C flags for the ROM and Kernel
+export EXTRA_SABERMOD_GCC_CFLAGS := \
+         -ftree-loop-distribution \
+         -ftree-loop-if-convert \
+         -ftree-loop-im \
+         -ftree-loop-ivcanon \
+         -fprefetch-loop-arrays \
+         -ftree-vectorize \
+         -mvectorize-with-neon-quad \
+         -pipe
+
+# Extra SaberMod CLANG C flags
+EXTRA_SABERMOD_CLANG_CFLAGS := \
+  -fprefetch-loop-arrays \
+  -ftree-vectorize \
+  -pipe
+
+OPT4 := extra
+
+GRAPHITE_KERNEL_FLAGS := \
+  -floop-parallelize-all \
+  -ftree-parallelize-loops=$(PRODUCT_THREADS) \
+  -fopenmp
+
+endif
 
 endif
 #################################################
