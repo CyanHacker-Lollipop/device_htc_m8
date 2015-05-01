@@ -33,18 +33,32 @@ USE_KERNEL_OPTIMIZATIONS := true
 ##How many threads does the device have?
 PRODUCT_THREADS := 4
 
+GRAPHITE_KERNEL_FLAGS := \
+    -floop-parallelize-all \
+    -ftree-parallelize-loops=$(PRODUCT_THREADS) \
+    -fopenmp
+
 # Extra SaberMod GCC C flags for arch target and Kernel
-export EXTRA_SABERMOD_GCC_CFLAGS := \
+export EXTRA_SABERMOD_GCC_VECTORIZE_CFLAGS := \
          -ftree-vectorize \
-         -mvectorize-with-neon-quade
+         -mvectorize-with-neon-quad
 
 # General flags for gcc 4.9 to allow compilation to complete.
 MAYBE_UNINITIALIZED := \
   hwcomposer.msm8974
 
-LOCAL_DISABLE_STRICT_ALIASING := \
-  libmmcamera_interface\
-  camera.hammerhead
+ifeq ($(strip $(ENABLE_STRICT_ALIASING)),true)
+  # strict-aliasing kernel flags
+  export KERNEL_STRICT_FLAGS := \
+           -fstrict-aliasing \
+           -Werror=strict-aliasing
+
+  # Enable strict-aliasing kernel flags
+export CONFIG_MACH_MSM8974_HAMMERHEAD_STRICT_ALIASING := y
+  LOCAL_DISABLE_STRICT_ALIASING := \
+    libmmcamera_interface\
+    camera.hammerhead
+endif
 
 else
 $(error *  Please compile on a Linux host OS to use this optimizations)
