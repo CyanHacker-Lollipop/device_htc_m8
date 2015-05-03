@@ -16,7 +16,7 @@ ifeq ($(strip $(HOST_OS)),linux)
 #HACKIFY CONFIGURATION 
 
 ##Define ROM toolchain
-TARGET_GCC_AND := 4.8-sm
+TARGET_GCC_AND := 4.9-sm
 
 ##Define NDK toolchain
 TARGET_NDK_VERSION := 4.9
